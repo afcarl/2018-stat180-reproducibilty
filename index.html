@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title> ROS @ UW eScience </title>
+		<title> Reprodcibility and Data Science </title>
 
-		<meta name="description" content="Community Seminar about the ROS WG">
+		<meta name="description" content="Guest lecture in STAT180: Data Science">
 		<meta name="author" content="Ariel Rokem">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -41,38 +41,198 @@
 			<div class="slides">
 				<section>
 
-
 					<img src="images/eScience.png" height="100px" alt="eScience logo" align="middle">
 
-					<h3 align="middle"> The Reproducibility and Open Science Working Group</h3>
-					<h4 align="middle"><div align=left>University of Washington eScience Institute </div></h4>
+					<h3 align="middle"> Scientific Reproducibility and Data Science</h3>
 
 					<br>
 					<p align="middle"><a href="http://arokem.org">Ariel Rokem</a>
+						<h4 align="middle"><div align=left>The University of Washington eScience Institute </div></h4>
 					<p align="middle">  <small>Follow along at: <t><a href="http://arokem.github.io/2017-10-03-ros/">http://arokem.github.io/2017-10-03-ros</t></a></small></p>
 					<img src="images/cc-by.png" height="30px" alt="License" align="middle">
 
 				</section>
 
-				<section data-background-image="./images/CompSci-X5.jpg" data-background-size="cover" style="background: rgba(255, 255, 255, 0.8);">
-				<blockquote>
-					<img src="images/eScience.png" width="800px">
-				        <small><em>"All across our campus, the process of discovery will increasingly rely on researchers’ ability to extract knowledge from vast amounts of data... In order to remain at the forefront, UW must be a leader in advancing these techniques and technologies, and in making [them] accessible to researchers in the broadest imaginable range of fields"</em></small>
-			  </blockquote>
-				</section>
+		<section>
+			<h2> Scientific reproducibility </h2>
+		</section>
 
-				<section>
-					<image src="images/DSE-and-sponsors.png" height=180px>
-						<br>
-					 <div>
-						 <p class="fragment"> Software </p>
-						 <p class="fragment"> Education </p>
-						 <p class="fragment"> Careers </p>
-						 <p class="fragment"> Spaces </p>
-						 <p class="fragment"> Data Science Studies</p>
-						 <p class="fragment"> <em>Reproducibility and Open Science </em></p>
-				 	</div>
-				</section>
+
+		<section>
+			<h3>The paradigms of scientific discovery</h3>
+			<p class="fragment">
+				1. Empirical (experimental)
+			</p>
+		</section>
+
+		<section>
+
+			<h4> Example: Galileo Galilei's experiment (16th Century) </h4>
+
+			<img src="images/galileo.png" height="400px">
+			<img src="images/galileos-experiment.png" height="400px">
+
+		</section>
+
+		<section>
+
+			<h4> The birth of reprodicibility : Robert Boyle (17th Century) </h4>
+
+			<image src="images/Robert_Boyle_0001.jpg" height="600px">
+			<image src="images/Boyle_air_pump.jpg" height="600px">
+
+		</section>
+
+
+		<section>
+		<h3>The paradigms of scientific discovery</h3>
+		<p>
+			1. Empirical (experimental)
+		</p>
+		<p class="fragment">
+				2. Theoretical (mathematical)
+		</p>
+		</section>
+
+		<section>
+			<h4>Example: Maxwell's laws of electromagnetism (19th century)</h4>
+
+			<img src="images/maxwell.png" width="250px">
+			<img src="images/maxwells-laws.png">
+
+		</section>
+
+		<section>
+		<h3>The paradigms of scientific discovery</h3>
+		<p>
+			1. Empirical (experimental)
+		</p>
+		<p>
+			2. Theoretical (mathematical)
+		</p>
+
+			<p class="fragment">
+				3. Simulation (computational)
+			</p>
+		</section>
+
+		<section>
+			<h4>Example: Finite element simulations  </h4>
+			<img src="images/turbine-simulation.png" width="600px">
+		</section>
+
+		<section>
+		<h3>The paradigms of scientific discovery</h3>
+		<p>
+			1. Empirical (experimental)
+		</p>
+		<p>
+			2. Theoretical (mathematical)
+		</p>
+		<p>
+				3. Simulation (computational)
+		</p>
+		<div class="fragment">
+			<p>
+				4. Data-intensive (eScience)
+			</p>
+
+		<div >
+				<img src="images/jim-gray.png" align="middle" style="background:none; border:none; box-shadow:none;">
+				<br>
+				Jim Gray
+
+		</div>
+		<div style="position: absolute; top: 340px; left: 600px;">
+				<img src="images/fourth-paradigm.png" align="middle" style="background:none; border:none; box-shadow:none;" width="200px">
+				<br>
+		</div>
+		</div>
+		</section>
+
+		<section>
+			<div style="position: absolute; top: 50px; left: -150px;">
+					<img src="images/ADN_animation.gif" align="middle" style="background:none; border:none; box-shadow:none;" width="200px">
+					<br>
+			</div>
+		<div style="position: absolute; top: 0px; left: 100px;">
+		<h3>Human genetics </h3>
+		<p>
+		The DNA in our cells encodes all of our hereditary information
+	</p>
+		<p class="fragment">
+		1953: Structure first elucidated
+		</p>
+		<p class="fragment">
+		1984: US government decides to sequence the human genome
+		<p>
+		<p class="fragment">
+			&nbsp; <em>3.3 B base-pairs!</em>
+		</p>
+		<p class="fragment">
+		1990: the Human Genome Project launches
+		<p>
+		<p class="fragment">
+		2001: first draft published
+		</p>
+		</div>
+		</section>
+
+		<section>
+			<h3>2003: HGP completed</h3>
+			<img src="images/hgp-ceremony.png" width="800">
+		</section>
+
+		<section>
+			<h3>Tremendous impact</h3>
+			<small class="fragment"><a href="https://report.nih.gov/NIHfactsheets/ViewFactSheet.aspx?csid=45">HGP fact sheet</a></small>
+		<p class="fragment">
+			> 1,800 human disease-related genes
+		</p>
+		<p class="fragment">
+			> 2,000 genetic tests for human conditions
+		</p>
+		<p class="fragment">
+			> 350 biotechnology companies
+		</p>
+
+		<p class="fragment">
+			<a href="https://www.battelle.org/docs/default-source/misc/battelle-2011-misc-economic-impact-human-genome-project.pdf">Recent estimate </a>: $3.8B investment that drove $796B in economic impact.
+
+		</section>
+
+		<section>
+			<h3>But that was just the start!</h3>
+			<img src="images/sequencing-moores-law.png" width="600px">
+			<br>
+			<p class="fragment">
+			Meaning that large amounts of data keep getting generated!
+			</p>
+		</section>
+
+		<section>
+		<h3>But that was just the start!</h3>
+		<img src="images/dna-growth.png" width="600px">
+		<br>
+		<small>
+		<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002195">Stephens et al. (2015), PLoS Biology</a>
+		</small>
+		<div class="fragment" style="position: absolute; top: 385px; left: 800px;">
+			<= Laptop
+		</div>
+
+		<div class="fragment" style="position: absolute; top: 300px; left: 800px;">
+			<= 1000x
+		</div>
+
+		<div class="fragment" style="position: absolute; top: 220px; left: 800px;">
+			<= 1Mx
+		</div>
+
+		<div class="fragment" style="position: absolute; top: 132px; left: 800px;">
+			<= 1Bx
+		</div>
+		</section>
 
 		<section>
 			<h2> Is there a "reproducibility crisis"? </h2>
@@ -141,7 +301,7 @@
 		</section>
 
 		<section>
-			<h3>"Assessing reproducibility" (with Ben Marwick and Valentina Staneva)</h3>
+			<h4>"Assessing reproducibility" (with Ben Marwick and Valentina Staneva)</h4>
 		<div>
 			<p class="fragment"> Automation and provenance tracking</p>
 			<p class="fragment"> Availability of software and data </p>
@@ -202,19 +362,6 @@
 		</section>
 
 		<section>
-			<h3>Incentives for acadmeic software development</h3>
-			<div class="fragment"><img src="images/joss.png" width=200>
-			<p> The developer-friendly software journal </p>
-			</div>
-			<p class="fragment">Focus on review of <em>the software</em></p>
-			<p class="fragment">Clear publication criteria</p>
-			<p class="fragment">Open review on Github</p>
-			<div class="fragment" style="position: absolute; left: 600px; top: 500px" >
-				<a href="https://arxiv.org/abs/1707.02264">Niemeyer et al. (2017)</a>
-		</div>
-		</section>
-
-		<section>
 			<h3>Data sharing</h3>
 			<p class="fragment">Sharing is caring!</p>
 		</section>
@@ -226,7 +373,7 @@
 
 		<section>
 			<h3>Benefits of data <strike>sharing</strike> publication</h3>
-			<p class="fragment">Accelerates progress in your field</p>
+			<p class="fragment">Accelerates progress in the field</p>
 			<p class="fragment">Many examples: genomics and astronomy</p>
 			<p class="fragment">Improves the quality of your publications</a>
 			<p class="fragment">Lower the cost of research, and ROI</a>
@@ -256,33 +403,11 @@
 			<p class="fragment"> Publish so that a large audience has access </p>
 		</section>
 
-		<section>
-			<h4>"The selfish scientists guide to posting preprints"</h4>
-
-			<img src="images/preprint-benefits-afo-posting-time.png" width=500>
-
-			<div style="position: absolute; left: 600px; top: 500px" >
-	<a href="https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/">Niko Kriegeskorte</a>
-		</div>
-		</section>
-
-		<section>
-			<h3>Incentives for ROS: badges</h3>
-			<img src="images/badges_stacked.original.png">
-			<div class="fragment"><a href="https://github.com/uwescience-open-badges"> UW open badges</a></div>
-		</section>
-
-		<section>
-			<h3>Do badges matter?</h3>
-			<img src="images/do-badges-matter.jpg" width=500>
-		</section>
-
 		<section data-background-image="./images/boundless.jpg" data-background-size="cover">
 			<blockquote  style="background: rgba(255, 255, 255, 0.8);">
 						<p>Robust evidence</p>
 			</blockquote>
 		</section>
-
 
 		<section>
 			<h3> Methodological/statistical challenges</h3>
@@ -348,9 +473,40 @@
 		</section>
 
 		<section>
-			Come see Andrew Gelman speak at the Data Science Seminar on
-			October 25th!
+			<h2>Reproducibility in Data Science</h2>
+
 		</section>
+
+		<section>
+
+			The same issues strike data scientists working in industry!
+
+			(see: <a href="https://stripe.com/blog/reproducible-research">https://stripe.com/blog/reproducible-research</a>)
+
+			
+
+		</section>
+
+		<section data-background-image="./images/CompSci-X5.jpg" data-background-size="cover" style="background: rgba(255, 255, 255, 0.8);">
+		<blockquote>
+			<img src="images/eScience.png" width="800px">
+						<small><em>"All across our campus, the process of discovery will increasingly rely on researchers’ ability to extract knowledge from vast amounts of data... In order to remain at the forefront, UW must be a leader in advancing these techniques and technologies, and in making [them] accessible to researchers in the broadest imaginable range of fields"</em></small>
+		</blockquote>
+		</section>
+
+		<section>
+			<image src="images/DSE-and-sponsors.png" height=180px>
+				<br>
+			 <div>
+				 <p class="fragment"> Software </p>
+				 <p class="fragment"> Education </p>
+				 <p class="fragment"> Careers </p>
+				 <p class="fragment"> Spaces </p>
+				 <p class="fragment"> Data Science Studies</p>
+				 <p class="fragment"> <em>Reproducibility and Open Science </em></p>
+			</div>
+		</section>
+
 		<section data-background-image="./images/portage-bay.jpg" data-background-size="cover" style="background: rgba(255, 255, 255, 0.8);">
 		<blockquote>
 			<img src="images/eScience.png" width="800px">
